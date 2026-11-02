@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Love Story for Rokay ❤️</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body class="locked">
+<canvas id="bg"></canvas>
+<div id="fx"></div>
+
+<button id="music" aria-label="music"><i class="fa-solid fa-play"></i><span class="eq"><i></i><i></i><i></i><i></i></span></button>
+
+<!-- 3. INTRO -->
+<section id="intro" class="screen">
+  <h1 class="script">Rokay ❤️</h1>
+  <p class="lead-en">You Are The Most Beautiful Part Of My Story</p>
+  <p class="sub-en">There's Something Special Waiting For You...</p>
+  <button id="open" class="glow-btn">افتحي عالمك الصغير ❤️</button>
+</section>
+
+<main id="world" hidden>
+<!-- 4. LETTER -->
+<section id="letter" class="screen">
+  <div id="env" class="envelope" tabindex="0" role="button">
+    <div class="env-back"></div>
+    <div class="paper"><div id="msg" class="msg"></div></div>
+    <div class="env-front"></div>
+    <div class="flap"></div>
+    <div class="env-label">إلى Rokay.. رسالة من القلب ❤️</div>
+  </div>
+  <p class="hint">اضغطي على الظرف</p>
+  <article id="letterFull" class="glass letter-full" hidden></article>
+</section>
+
+<!-- 5. PHOTO -->
+<section id="photo" class="screen">
+  <h2 class="script">Our Beautiful Memory ❤️</h2>
+  <div class="frame reveal">
+    <img id="pic" src="./WhatsApp Image 2026-11-03 at 1.05.29 AM.jpeg" alt="Our Beautiful Memory">
+    <label id="pick" class="pick" hidden><i class="fa-solid fa-image"></i><br>ضعي صورتكما هنا (photo.jpg) أو اضغطي للاختيار<input type="file" accept="image/*" hidden></label>
+  </div>
+  <p class="cap">في صور بتفضل مجرد صورة، وفي صور بتفضل ذكرى جميلة كل ما نشوفها نبتسم.</p>
+</section>
+
+<!-- 6. HEARTS -->
+<section id="why" class="screen">
+  <h2 class="title">Why Rokay Is Special</h2>
+  <div id="hearts" class="row g-3 justify-content-center"></div>
+  <div id="heartMsg" class="glass toast-msg">اضغطي على قلب ❤️</div>
+</section>
+
+<!-- 7. WISH -->
+<section id="wish" class="screen">
+  <div class="moon"></div>
+  <p class="wish reveal">نفسي أشوف كل أحلامك بتتحقق، وأشوفك دايماً ناجحة ومبسوطة، وقلبك مليان راحة وفرحة.</p>
+</section>
+
+<!-- 8. NOTES -->
+<section id="notes" class="screen">
+  <h2 class="title">Little Love Notes</h2>
+  <div id="noteGrid" class="row g-3 justify-content-center"></div>
+  <div id="noteMsg" class="glass toast-msg">اختاري ظرفًا 💌</div>
+</section>
+
+<!-- 9. FINALE -->
+<section id="finale" class="screen">
+  <button id="begin" class="glow-btn">Our Story ✨</button>
+</section>
+</main>
+
+<div id="story" hidden>
+  <canvas id="galaxy"></canvas>
+  <div class="beams"></div>
+  <div class="bigheart">❤</div>
+  <h2 id="sTitle" class="script s-title">Our Story Is Just Beginning...</h2>
+  <p id="sLine" class="s-line"></p>
+  <div id="sEnd" class="s-end">
+    <h1 class="script">Rokay ❤️</h1>
+    <p class="forever">OUR STORY. OUR DREAMS. OUR FOREVER.</p>
+    <p class="last">لسه الحكاية في أولها يا Rokay.. وأجمل أيامنا لسه جاية ❤️</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
